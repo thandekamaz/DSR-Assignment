@@ -51,7 +51,7 @@ print(f'Total number of PLHIV in all cities: {total_no_plhiv_cities}')
 print("\nQ3: ")
 
 # Replace all special characters with an empty string
-df.columns = df.columns.str.replace(r'[^a-zA-Z0-9_ %]', '')
+df.columns = df.columns.str.replace(r'[^a-zA-Z0-9]', '')
 
 # Print the resultant column names
 print(df)
